@@ -1,0 +1,90 @@
+name: Generate MITRE Navigator Layers
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [ regenerate_layers ]
+
+permissions:
+  contents: write   # REQUIRED so the workflow can commit layer JSONs
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Checkout mitre-layer-gen (this repo)
+      - name: Checkout mitre-layer-gen
+        uses: actions/checkout@v4
+
+      # 2) Checkout secops-cheetah detections (read-only clone)
+      - name: Checkout secops-cheetah detections
+        uses: actions/checkout@v4
+        with:
+          repository: Rippling/secops-cheetah
+          path: secops-cheetah
+
+      # 3) Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 4) Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      # 5) Ensure layers output directory exists
+      - name: Create layers directory
+        run: mkdir -p layers
+
+      # 6) Generate All layer
+      - name: Generate All layer
+        run: |
+          python scripts/generate_layers.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_all.json \
+            --name "Coverage - All"
+
+      # 7) Generate SaaS layer
+      - name: Generate SaaS layer
+        run: |
+          python scripts/saas_layer.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_saas.json \
+            --name "Coverage - SaaS"
+
+      # 8) Generate Cloud layer
+      - name: Generate Cloud layer
+        run: |
+          python scripts/cloud_layer.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_cloud.json \
+            --name "Coverage - Cloud"
+
+      # 9) Generate Endpoint layer
+      - name: Generate Endpoint layer
+        run: |
+          python scripts/endpoint_layer.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_endpoint.json \
+            --name "Coverage - Endpoint"
+
+      # 10) Generate Network layer
+      - name: Generate Network layer
+        run: |
+          python scripts/network_layer.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_network.json \
+            --name "Coverage - Network"
+
+      # 11) Commit updated layers
+      - name: Commit updated layers
+        run: |
+          git config user.name "layer-bot"
+          git config user.email "layer-bot@rippling.com"
+          git add layers/*.json
+          git diff --cached --quiet || git commit -m "Auto-update Navigator layers"
+          git push
