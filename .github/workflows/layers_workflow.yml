@@ -71,6 +71,11 @@ jobs:
         run: |
           git config user.name "layer-bot"
           git config user.email "layer-bot@rippling.com"
+
           git add layers/*.json
           git diff --cached --quiet || git commit -m "Auto-update MITRE Navigator layers"
+
+          git pull --rebase origin main
+
           git push
+
