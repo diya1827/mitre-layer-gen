@@ -66,7 +66,23 @@ jobs:
             --out layers/coverage_cloud.json \
             --name "Coverage - Cloud"
 
-      # 9) Commit updated layers (only if changed)
+      # 9) Generate Endpoint coverage layer
+      - name: Generate Endpoint layer
+        run: |
+          python scripts/endpoint_layer.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_endpoint.json \
+            --name "Coverage - Endpoint"
+
+      # 10) Generate Network coverage layer
+      - name: Generate Network layer
+        run: |
+          python scripts/network_layer.py \
+            --repo secops-cheetah/app/detections \
+            --out layers/coverage_network.json \
+            --name "Coverage - Network"
+
+      # 11) Commit updated layers (only if changed)
       - name: Commit updated layers
         run: |
           git config user.name "layer-bot"
