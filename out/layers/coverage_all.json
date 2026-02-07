@@ -1,0 +1,885 @@
+{
+  "name": "Coverage - All",
+  "domain": "enterprise-attack",
+  "description": "Auto-generated from detection YAML files in repo (technique + severity).",
+  "gradient": {
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "layout": {
+    "layout": "side"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T0871",
+      "score": 50,
+      "comment": "detections=7; max_sev=sev0; examples=api_call_from_unknown_account/api_call_from_unknown_account_rule.yaml, start_ssm_session/start_ssm_session_rule.yaml, high_severity_guardduty/high_severity_guardduty_rule.yaml, medium_severity_guardduty/medium_severity_guardduty_rule.yaml, s1_new_threat_detected/s1_new_threat_detected_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "7"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1003",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev0; examples=unauthorized_github_assume_role/unauthorized_github_assume_role_rule.yaml, read_database_connection_env_variables/read_database_env_variables_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev1; examples=potential_data_exfiltration/potential_data_exfiltration_rule.yaml, risky_terminated_employees/risky_terminated_employees_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1010",
+      "score": 50,
+      "comment": "detections=9; max_sev=sev0; examples=account_attempted_to_leave_org/account_attempted_to_leave_org_rule.yaml, delegated_admin_account_removed/delegated_admin_account_removed_rule.yaml, s3_public_access_allowed/s3_public_access_allowed_rule.yaml, scp_modify/scp_modify_rule.yaml, update_saml_provider/update_saml_provider_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "9"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1020",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=access_to_sensitive_s3_via_webscript/access_to_sensitive_s3_via_webscript_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1021.004",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=start_ssm_session/start_ssm_session_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1039",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev1; examples=potential_data_exfiltration/potential_data_exfiltration_rule.yaml, risky_terminated_employees/risky_terminated_employees_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1048",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev1; examples=drive_high_downloads/drive_high_downloads_rule.yaml, ip_address_hardcoded_in_webscript/ip_address_hardcoded_in_webscript_rule.yaml, file_fetched_from_laptop/file_fetched_from_laptop_rule.yaml, s1_remote_ops_forensics/s1_remote_ops_forensics_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev0; examples=high_severity_guardduty/high_severity_guardduty_rule.yaml, medium_severity_guardduty/medium_severity_guardduty_rule.yaml, ip_address_hardcoded_in_webscript/ip_address_hardcoded_in_webscript_rule.yaml, new_wiz_threat_detection_issue/new_wiz_threat_detection_issue_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1074",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=high_number_of_confluence_page_exports/high_number_of_confluence_page_exports_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 50,
+      "comment": "detections=5; max_sev=sev2; examples=external_access_created/external_access_created_rule.yaml, unauthorized_github_assume_role/unauthorized_github_assume_role_rule.yaml, impossible_travel_rippling_team_member/impossible_travel_rippling_team_member_rule.yaml, direct_push_to_main_branch/direct_push_to_main_branch_rule.yaml, personal_device_access/personal_device_access_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "5"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1078.002",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=employee_laptop_in_prohibited_country/employee_laptop_in_prohibited_country_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1078.004",
+      "score": 50,
+      "comment": "detections=36; max_sev=sev0; examples=access_key_created/access_key_created_rule.yaml, account_attempted_to_leave_org/account_attempted_to_leave_org_rule.yaml, atlantis_role_abuse/atlantis_role_abuse_rule.yaml, break_glass_console_login/break_glass_console_login_rule.yaml, break_glass_mfa_failure/break_glass_mfa_failure_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "36"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev0; examples=high_severity_guardduty/high_severity_guardduty_rule.yaml, medium_severity_guardduty/medium_severity_guardduty_rule.yaml, new_wiz_threat_detection_issue/new_wiz_threat_detection_issue_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev2; examples=external_access_created/external_access_created_rule.yaml, unauthorized_github_assume_role/unauthorized_github_assume_role_rule.yaml, org_member_base_permission_modified/org_member_base_permission_modified_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098.001",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev0; examples=dataeng_privileged_access_granted/dataeng_privileged_access_granted_rule.yaml, secops_privileged_access_granted/secops_privileged_access_granted_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098.002",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev0; examples=break_glass_user_left_rippling/break_glass_user_left_rippling_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098.003",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev1; examples=action_in_aws_organization_account/action_in_aws_organization_account_rule.yaml, user_permission_escalation/user_permission_escalation_rule.yaml, break_glass_user_left_rippling/break_glass_user_left_rippling_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098.005",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev0; examples=new_root_mfa_device/new_root_mfa_device_rule.yaml, root_mfa_device_removed/root_mfa_device_removed_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1102",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=potential_spam_in_email_template/potential_spam_in_email_template_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=successful_brute_force/successful_brute_force_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev2; examples=new_payments_url_detected_in_rippling/new_payments_url_detected_in_rippling_rule.yaml, new_payroll_filing_url_detected_in_rippling/new_payroll_filing_url_detected_in_rippling_rule.yaml, new_payroll_url_detected_in_rippling/new_payroll_url_detected_in_rippling_rule.yaml, new_url_detected_in_rippling/new_url_detected_in_rippling_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1136",
+      "score": 50,
+      "comment": "detections=7; max_sev=sev1; examples=new_admin_added/new_admin_added_rule.yaml, new_rippling_super_admin_found/rippling_super_admin_added_or_modified_rule.yaml, new_salesforce_admin_user_created/new_salesforce_admin_user_created_rule.yaml, new_system_user_created/new_system_user_created_rule.yaml, new_user_created/new_user_created_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "7"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1195",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev3; examples=supply_chain/sca_detection_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev3"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1199",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev2; examples=deel_honeypot_hit/deel_honeypot_hit_rule.yaml, internal_actor_at_rippling_office/internal_actor_at_rippling_office_rule.yaml, actor_of_interest_activity/actor_of_interest_activity_rule.yaml, actor_of_interest_address_changes/actor_of_interest_address_changes_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1213",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=ee_joining_a_competitor/ee_joining_a_competitor_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1213.003",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev1; examples=shell_execution_into_pod/shell_execution_into_pod_rule.yaml, access_from_risk_country/access_from_risk_country_rule.yaml, excessive_repository_clones/excessive_repository_clones_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=cluster_deleted/cluster_deleted_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1496",
+      "score": 50,
+      "comment": "detections=13; max_sev=sev0; examples=account_attempted_to_leave_org/account_attempted_to_leave_org_rule.yaml, delegated_admin_account_removed/delegated_admin_account_removed_rule.yaml, guardduty_disabled/guardduty_disabled_rule.yaml, s3_public_access_allowed/s3_public_access_allowed_rule.yaml, scp_modify/scp_modify_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "13"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1499",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=static_content_multiple_403/static_content_multiple_403_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1526",
+      "score": 50,
+      "comment": "detections=10; max_sev=sev0; examples=account_attempted_to_leave_org/account_attempted_to_leave_org_rule.yaml, delegated_admin_account_removed/delegated_admin_account_removed_rule.yaml, guardduty_disabled/guardduty_disabled_rule.yaml, s3_public_access_allowed/s3_public_access_allowed_rule.yaml, scp_modify/scp_modify_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "10"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1526.008",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev0; examples=log_tampering/log_tampering_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1530",
+      "score": 50,
+      "comment": "detections=16; max_sev=sev0; examples=ebs_snapshot_made_public/ebs_snapshot_made_public_rule.yaml, rds_snapshot_made_public/rds_snapshot_made_public_rule.yaml, s3_bucket_made_public_via_acl/s3_bucket_made_public_via_acl_rule.yaml, s3_dangerous_bucket_policy/s3_dangerous_bucket_policy_rule.yaml, red_classification_without_logging/red_classification_without_logging_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "16"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1537",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=external_access_created/external_access_created_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1548",
+      "score": 50,
+      "comment": "detections=6; max_sev=sev2; examples=proxy_admin_activity/proxy_admin_activity_rule.yaml, proxy_elevated_access_in_hr/proxy_elevated_access_rule.yaml, proxy_session_by_non_rippling_role/proxy_session_by_non_rippling_role_rule.yaml, proxy_session_to_anduril/proxy_session_to_anduril_rule.yaml, proxy_session_to_public_square/proxy_session_to_public_square_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "6"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=new_verified_secret/new_verified_secret_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1555",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev0; examples=access_to_high_value_secrets/access_to_high_value_secrets_rule.yaml, access_to_log_puller_secrets/access_to_log_puller_secrets_rule.yaml, unauthorized_access_to_snowflake_secret/unauthorized_access_to_snowflake_secret_rule.yaml, external_collaborator_invited_to_channel/external_collaborator_invited_to_channel_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1555.006",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev0; examples=flux_proxy_tables_access_by_unexpected_principal/flux_proxy_tables_access_by_unexpected_principal_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1557",
+      "score": 50,
+      "comment": "detections=6; max_sev=sev2; examples=customer_on_phishing_site/customer_on_phishing_site_rule.yaml, customer_redirected_from_phishing_site/customer_redirected_from_phishing_site_rule.yaml, potential_phishing_in_referer_pages/potential_phishing_in_referer_pages_rule.yaml, potential_phishing_in_referer_static_assets/potential_phishing_in_referer_static_assets_rule.yaml, potentially_phished_customer/potentially_phished_customer_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "6"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1562.007",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev0; examples=open_security_group/open_security_group_rule.yaml, secops_network_policy_modification/secops_network_policy_modification_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1562.008",
+      "score": 50,
+      "comment": "detections=5; max_sev=sev0; examples=guardduty_new_ipset/guardduty_new_ipset_rule.yaml, vpc_flow_logs_disabled/vpc_flow_logs_disabled_rule.yaml, vpc_peering_connection_accepted/vpc_peering_connection_accepted_rule.yaml, vpc_peering_connection_created/vpc_peering_connection_created_rule.yaml, secops_new_user_with_pass/secops_new_user_with_pass_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "5"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1565",
+      "score": 50,
+      "comment": "detections=5; max_sev=sev1; examples=ledger_entry_no_purpose/ledger_entry_no_purpose_rule.yaml, critical_ledger_operations/critical_ledger_operations_rule.yaml, potential_financial_fraud/potential_financial_fraud_rule.yaml, dataeng_alter_masking_policy/dataeng_alter_masking_policy_rule.yaml, secops_modify_data_masking/secops_modify_data_masking_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "5"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1565.001",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=suspicious_bank_account_changes/suspicious_bank_account_changes_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1565.002",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev0; examples=sftp_inbox_function_executed/sftp_inbox_function_executed_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev1; examples=ai_classified_phishing_host/ai_classified_phishing_host_rule.yaml, suspicious_http_origin/suspicious_http_origin_rule.yaml, unexpected_http_referrer/unexpected_http_referrer_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1567",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev1; examples=potential_data_exfiltration/potential_data_exfiltration_rule.yaml, risky_terminated_employees/risky_terminated_employees_rule.yaml, dataeng_spike_user_query_volume/dataeng_spike_user_query_volume_rule.yaml, secops_spike_user_query_volume/secops_spike_user_query_volume_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1567.002",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=files_shared_with_personal_email/files_shared_with_personal_email_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1567.003",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=data_leak_paste_sites/data_leak_paste_sites_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1568",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev0; examples=high_severity_guardduty/high_severity_guardduty_rule.yaml, medium_severity_guardduty/medium_severity_guardduty_rule.yaml, new_wiz_threat_detection_issue/new_wiz_threat_detection_issue_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1571",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev0; examples=high_severity_guardduty/high_severity_guardduty_rule.yaml, medium_severity_guardduty/medium_severity_guardduty_rule.yaml, new_wiz_threat_detection_issue/new_wiz_threat_detection_issue_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1578",
+      "score": 50,
+      "comment": "detections=4; max_sev=sev0; examples=iam_manual_permissionset_update/iam_manual_permissionset_update_rule.yaml, jit_member_added_privileged_group/jit_member_added_privileged_group_rule.yaml, new_aws_local_user_created/new_aws_local_user_created_rule.yaml, resource_created_in_inactive_region/resource_created_in_inactive_region_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "4"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1580",
+      "score": 50,
+      "comment": "detections=3; max_sev=sev0; examples=high_severity_guardduty/high_severity_guardduty_rule.yaml, medium_severity_guardduty/medium_severity_guardduty_rule.yaml, new_wiz_threat_detection_issue/new_wiz_threat_detection_issue_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "3"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1586.002",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev1; examples=potential_spam_in_email_template/potential_spam_in_email_template_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev1"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1598.003",
+      "score": 50,
+      "comment": "detections=2; max_sev=sev2; examples=phishing_page_awaiting_confirmation/phishing_page_awaiting_confirmation_rule.yaml, potential_phishing_page_awaiting_rippling_input/potential_phishing_page_awaiting_rippling_input_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "2"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1608.006",
+      "score": 50,
+      "comment": "detections=5; max_sev=sev0; examples=cross_company_access_by_ra_cookie/cross_company_access_by_ra_cookie_rule.yaml, impossible_travel_with_phishing_activity/impossible_travel_with_phishing_activity_rule.yaml, login_from_known_bad_ip/login_from_known_bad_ip_rule.yaml, login_from_known_bad_ra_cookie/login_from_known_bad_ra_cookie_rule.yaml, phishing_honeypot_ra_cookie/phishing_honeypot_ra_cookie_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "5"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1628.001",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=suspicious_events_on_device/suspicious_events_on_device_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1628.002",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev2; examples=suspicious_events_on_device/suspicious_events_on_device_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev2"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1651",
+      "score": 50,
+      "comment": "detections=1; max_sev=sev0; examples=global_admin_activity/global_admin_activity_rule.yaml",
+      "metadata": [
+        {
+          "name": "detections_count",
+          "value": "1"
+        },
+        {
+          "name": "max_severity",
+          "value": "sev0"
+        }
+      ]
+    }
+  ]
+}
