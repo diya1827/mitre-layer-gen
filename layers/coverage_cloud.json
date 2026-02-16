@@ -1,5 +1,10 @@
 {
   "name": "Coverage - Cloud",
+  "versions": {
+    "attack": "17",
+    "navigator": "5.1.1",
+    "layer": "4.5"
+  },
   "domain": "enterprise-attack",
   "description": "Auto-generated cloud-only ATT&CK coverage from Rippling detections.",
   "gradient": {
