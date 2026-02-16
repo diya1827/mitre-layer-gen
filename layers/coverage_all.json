@@ -9,7 +9,12 @@
   "description": "Auto-generated from detection YAML files in repo (technique + severity).",
   "gradient": {
     "minValue": 0,
-    "maxValue": 100
+    "maxValue": 100,
+    "colors": [
+      "#ff6666",
+      "#ffe766",
+      "#8ec843"
+    ]
   },
   "layout": {
     "layout": "side"
